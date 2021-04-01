@@ -8,7 +8,7 @@ import (
 
 func TestKey(t *testing.T) {
 	c, _ := cid.Decode("QmP63DkAFEnDYNjDYBpyNDfttu1fvUw99x1brscPzpqmmq")
-	dsKey := MultihashToDsKey(c.Hash())
+	dsKey := MultihashToStrKey(c.Hash())
 	mh, err := DsKeyToMultihash(dsKey)
 	if err != nil {
 		t.Fatal(err)
