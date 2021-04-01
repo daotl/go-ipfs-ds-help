@@ -5,7 +5,7 @@ DAOT Labs's fork of [ipfs/go-ipfs-ds-help](https://github.com/ipfs/go-ipfs-ds-he
 [![](https://img.shields.io/badge/made%20by-Protocol%20Labs-blue.svg?style=flat-square)](http://ipn.io)
 [![](https://img.shields.io/badge/project-DAOT%20Labs-red.svg?style=flat-square)](http://github.com/daotl)
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-[![GoDoc](https://pkg.go.dev/github.com/daotl/go-ipfs-ds-help?status.svg)](https://pkg.go.dev/github.com/daotl/go-ipfs-ds-help)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat-square)](https://pkg.go.dev/github.com/daotl/go-ipfs-ds-help)
 [![Build Status](https://travis-ci.org/daotl/go-ipfs-ds-help.svg?branch=master)](https://travis-ci.org/daotl/go-ipfs-ds-help)
 
 > go-ipfs-ds-help provides utilities for parsing and creating datastore keys used by go-ipfs.
