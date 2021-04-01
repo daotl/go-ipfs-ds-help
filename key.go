@@ -10,7 +10,7 @@ import (
 )
 
 // NewStrKeyFromBinary creates a new StrKey from a byte slice using Base32 encoding.
-func NewStrKeyFromBinary(rawKey []byte) key.Key {
+func NewStrKeyFromBinary(rawKey []byte) key.StrKey {
 	buf := make([]byte, 1+base32.RawStdEncoding.EncodedLen(len(rawKey)))
 	buf[0] = '/'
 	base32.RawStdEncoding.Encode(buf[1:], rawKey)
@@ -26,7 +26,7 @@ func BinaryFromDsKey(dsKey key.Key) ([]byte, error) {
 // If working with Cids, you can call cid.Hash() to obtain
 // the multihash. Note that different CIDs might represent
 // the same multihash.
-func MultihashToStrKey(k mh.Multihash) key.Key {
+func MultihashToStrKey(k mh.Multihash) key.StrKey {
 	return NewStrKeyFromBinary(k)
 }
 
